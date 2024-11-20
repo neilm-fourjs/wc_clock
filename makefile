@@ -1,6 +1,6 @@
 # Automatic Makefile made by make4js by N.J.M.
 
-export FGLIMAGEPATH=$(PWD)
+export FGLIMAGEPATH=$(PWD)/wc
 
 fgl_obj1 =  \
 	 clock.$(4GLOBJ)
