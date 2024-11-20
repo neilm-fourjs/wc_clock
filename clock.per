@@ -1,0 +1,36 @@
+
+LAYOUT (TEXT="Clock Test")
+VBOX
+GRID
+{
+This is a simple form
+[cl        ]
+[          ]
+[          ]
+[          ]
+[          ]
+[""]
+[dcl       ]
+[          ]
+}
+END -- GRID
+GRID
+{
+More stuff here.
+[ltim   :tim         ]
+}
+END -- GRID
+END -- VBOX
+
+ATTRIBUTES
+LABEL ltim : ltim,TEXT=%"The time is";
+LABEL tim = FORMONLY.cur_time, STYLE="time", SIZEPOLICY=DYNAMIC;
+WEBCOMPONENT cl = FORMONLY.cl, 
+		HEIGHT=60 PIXELS, WIDTH=60 PIXELS,
+		STRETCH=NONE,
+		SCROLLBARS=NONE;
+WEBCOMPONENT dcl = FORMONLY.dcl, 
+		HEIGHT=40 PIXELS, WIDTH=60 PIXELS,
+		STRETCH=NONE,
+		SCROLLBARS=NONE;
+
