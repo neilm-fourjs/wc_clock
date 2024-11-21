@@ -1,36 +1,52 @@
 
 LAYOUT (TEXT="Clock Test")
 VBOX
+HBOX
 GRID
 {
 This is a simple form
+[ltim   :tim         ]
+Client OS:
+[osver               ]
+Client:
+[cli                 ]
+}
+END -- GRID
+GRID
+{
 [cl        ]
 [          ]
 [          ]
 [          ]
 [          ]
-[""]
-[dcl       ]
-[          ]
 }
 END -- GRID
+END -- HBOX
 GRID
 {
-More stuff here.
-[ltim   :tim         ]
+[dcl                            ]
+[                               ]
+[                               ]
+[                               ]
+[                               ]
+[                               ]
+[       :dte            :       ]
 }
 END -- GRID
 END -- VBOX
 
 ATTRIBUTES
+LABEL osver = FORMONLY.osver;
+LABEL cli = FORMONLY.cli;
 LABEL ltim : ltim,TEXT=%"The time is";
 LABEL tim = FORMONLY.cur_time, STYLE="time", SIZEPOLICY=DYNAMIC;
+LABEL dte = FORMONLY.cur_date, STYLE="date", SIZEPOLICY=DYNAMIC;
 WEBCOMPONENT cl = FORMONLY.cl, 
 		HEIGHT=100 PIXELS, WIDTH=60 PIXELS,
 		STRETCH=NONE,
 		SCROLLBARS=NONE;
 WEBCOMPONENT dcl = FORMONLY.dcl, 
-		HEIGHT=40 PIXELS, WIDTH=60 PIXELS,
+		HEIGHT=60 PIXELS, WIDTH=100 PIXELS,
 		STRETCH=NONE,
 		SCROLLBARS=NONE;
 

@@ -2,7 +2,6 @@
 <APPLICATION Parent="defaultgwc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.4js.com/ns/gas/4.01/cfextwa.xsd">
   <EXECUTION>
 		<ENVIRONMENT_VARIABLE Id="FGLIMAGEPATH">wc</ENVIRONMENT_VARIABLE>
-		<ENVIRONMENT_VARIABLE Id="GAS">true</ENVIRONMENT_VARIABLE>
     <PATH>$(res.deployment.path)</PATH>
     <MODULE>wc_clock</MODULE>
   </EXECUTION>
